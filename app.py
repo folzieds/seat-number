@@ -22,7 +22,7 @@ def search():
     if request.method == 'GET':
         try:
             df_seats = pd.read_csv('seats.csv')
-            q = request.args.get('q')
+            q = request.args.get('q').strip()
 
             df_seats['Names'] = df_seats['Names'].str.lower()
 
