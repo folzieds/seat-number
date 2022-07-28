@@ -19,7 +19,7 @@
           </a>
         </div>
     </nav>
-    <div class="container" style="background-image: url('wine.jpeg');">
+    <div class="container">
         <div>
             <p>
                 Thank you for attending our wedding. Please find your table number below using either your last name or first name as submitted. 
@@ -52,6 +52,8 @@
                     {% endfor %}
                 </tbody>
             </table>
+          <!-- {% elif data|length == 0 %}
+            <p style="text-align: center;">Sorry your name cannot be found, please contact the event Organizer directly.</p> -->
           {% endif %}
     </div>
     
